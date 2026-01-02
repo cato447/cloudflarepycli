@@ -219,12 +219,12 @@ class CloudflareSpeedtest:
 
     def run_all(self, *, megabits: bool = False) -> SuiteResults:
         """Run the full test suite."""
-        meta = self.metadata()
-        self._sprint("ip", TestResult(meta.ip), meta=True)
-        self._sprint("isp", TestResult(meta.isp))
-        self._sprint("location_code", TestResult(meta.location_code), meta=True)
-        self._sprint("location_city", TestResult(meta.city), meta=True)
-        self._sprint("location_region", TestResult(meta.region), meta=True)
+        # meta = self.metadata()
+        # self._sprint("ip", TestResult(meta.ip), meta=True)
+        # self._sprint("isp", TestResult(meta.isp))
+        # self._sprint("location_code", TestResult(meta.location_code), meta=True)
+        # self._sprint("location_city", TestResult(meta.city), meta=True)
+        # self._sprint("location_region", TestResult(meta.region), meta=True)
 
         data = {"down": [], "up": []}
         for test in self.tests:
